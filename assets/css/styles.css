@@ -138,17 +138,27 @@ header.fixed {
 
 .content-block .cta-group {
   margin-top: 52px;
+  display: flex;
+  align-items: center;
 }
 
 .content-block .watch-video {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.content-block .watch-video .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 62px;
   height: 62px;
   border-radius: 50%;
-  border: none;
-  margin-left: 50px;
-  background: #fff;
   box-shadow: 0px 22px 50px 0px #0000000d;
-  cursor: pointer;
 }
 
 .content-block .btn-hero {
