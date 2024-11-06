@@ -54,6 +54,14 @@ a {
   line-height: 1.16; /* 116.129% */
 }
 
+.progress {
+  height: 6px;
+  border-radius: 999px;
+  background: #fb9899;
+}
+
+/* --------------------------------------------------------------------------------- */
+
 /* Header */
 .header {
   background-color: #fff;
@@ -272,4 +280,34 @@ header.fixed {
   font-size: 1rem;
   font-weight: 500;
   line-height: normal;
+  margin-bottom: 16px;
+}
+
+.hero-schedule .background-bar {
+  width: 74px;
+  height: 6px;
+  border-radius: 3px;
+  background: #edf1f5;
+}
+
+.hero-schedule .background-bar:nth-child(2) {
+  margin: 12px 0 10px;
+}
+
+.hero-schedule .background-bar:last-child {
+  margin: 16px auto 0;
+  width: 26px;
+  height: 6px;
+}
+
+.hero-schedule .progress-bar-1 {
+  width: 39px;
+}
+
+.hero-schedule .progress-bar-2 {
+  width: 51px;
+}
+
+.hero-schedule .progress-bar-3 {
+  width: 33px;
 }
