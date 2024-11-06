@@ -54,6 +54,17 @@ a {
   line-height: 1.16; /* 116.129% */
 }
 
+.heading.lv2 {
+  font-size: 4.2rem;
+  line-height: 1.33; /* 133.333% */
+}
+
+.heading.lv3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .progress {
   height: 6px;
   border-radius: 999px;
@@ -354,4 +365,55 @@ header.fixed {
   font-weight: 500;
   line-height: 33px; /*căn giữa theo chiều cao */
   text-align: center; /*căn giữa theo chiều cao */
+}
+
+/* Features */
+.features {
+  margin-top: 149px;
+}
+
+.features .main-content {
+  width: 1024px;
+}
+
+.features .top-title {
+  display: block;
+  width: 95px;
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 18px;
+  word-spacing: 2px;
+}
+
+.features .heading.lv2 {
+  width: 577px;
+  margin-bottom: 18px;
+  /* height: 112px; */
+}
+
+.features .desc {
+  width: 590px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  line-height: normal;
+  margin-bottom: 80px;
+}
+
+.features .features-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features-list .heading.lv3 {
+  margin: 26px 0 16px;
+}
+
+.features-list .feature-desc {
+  width: 224px;
+  color: #9da6a5;
+  font-size: 1.6rem;
+  line-height: 1.69; /* 168.75% */
 }
