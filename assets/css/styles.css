@@ -11,7 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Common */
+/*===========================Common===========================*/
 
 .main-content {
   width: 1170px;
@@ -80,9 +80,8 @@ a {
   word-spacing: 2px;
 }
 
-/* --------------------------------------------------------------------------------- */
+/*===========================Header===========================*/
 
-/* Header */
 .header {
   background-color: #fff;
 }
@@ -98,6 +97,16 @@ header.fixed {
   display: flex;
   align-items: center;
   padding: 52px 0 8px;
+}
+
+.header .sign-up-btn {
+  min-width: 108px;
+  line-height: 48px;
+  margin-left: 24px;
+}
+
+.header .actions {
+  margin-left: auto;
 }
 
 .nav {
@@ -121,18 +130,7 @@ header.fixed {
   text-shadow: 1px 0 0 currentColor;
 }
 
-.header .sign-up-btn {
-  min-width: 108px;
-  line-height: 48px;
-  margin-left: 24px;
-}
-
-.header .actions {
-  margin-left: auto;
-}
-
 /* Hero */
-
 .hero {
   padding: 42px 0 79px;
 }
@@ -149,29 +147,29 @@ header.fixed {
   /* margin-right: 136px; */
 }
 
-.content-block .slogan {
+.hero .slogan {
   color: #767e7e;
   font-size: 1.4rem;
 }
 
-.content-block .heading {
+.hero .heading {
   padding-top: 18px;
 }
 
-.content-block .desc {
+.hero .desc {
   color: #9da6a5;
   font-size: 1.8rem;
   line-height: 1.7; /* 177.778% */
   margin: 46px 84px 0 0;
 }
 
-.content-block .cta-group {
+.hero .cta-group {
   margin-top: 52px;
   display: flex;
   align-items: center;
 }
 
-.content-block .watch-video {
+.hero .watch-video {
   display: flex;
   align-items: center;
   border: none;
@@ -180,11 +178,11 @@ header.fixed {
   margin-left: 50px;
 }
 
-.content-block .watch-video:hover {
+.hero .watch-video:hover {
   opacity: 0.8;
 }
 
-.content-block .watch-video .icon {
+.hero .watch-video .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,7 +192,7 @@ header.fixed {
   box-shadow: 0px 22px 50px 0px #0000000d;
 }
 
-.content-block .btn-hero {
+.hero .btn-hero {
   border-radius: 14px;
   background: #1ebfc1;
   color: #fff;
@@ -202,7 +200,7 @@ header.fixed {
   border: none;
 }
 
-.content-block .btn-hero:hover {
+.hero .btn-hero:hover {
   background-color: #fff;
   color: #1ebfc1;
   /* border: 1px solid #1ebfc1; */
@@ -238,7 +236,7 @@ header.fixed {
   vertical-align: bottom;
 }
 
-.media-block .hero-courses {
+.hero .hero-courses {
   position: absolute;
   display: flex;
   align-items: center;
@@ -252,14 +250,14 @@ header.fixed {
   box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
 }
 
-.media-block .course-title {
+.hero .course-title {
   color: #0d1111;
   font-size: 1rem;
   font-weight: 500;
   line-height: normal;
 }
 
-.media-block .courses-book {
+.hero .courses-book {
   position: relative;
   width: 36px;
   height: 40px;
@@ -269,7 +267,7 @@ header.fixed {
   flex-shrink: 0;
 }
 
-.media-block .courses-book::after {
+.hero .courses-book::after {
   content: "";
   position: absolute;
   bottom: 8px;
@@ -281,7 +279,7 @@ header.fixed {
   background: #ffffff;
 }
 
-.media-block .hero-schedule {
+.hero .hero-schedule {
   position: absolute;
   right: 517px;
   bottom: 46px;
@@ -332,14 +330,14 @@ header.fixed {
   width: 33px;
 }
 
-.media-block .student-title {
+.hero .student-title {
   color: #0d1111;
   font-size: 1rem;
   font-weight: 500;
   line-height: normal;
 }
 
-.media-block .list-students {
+.hero .list-students {
   position: absolute;
   bottom: 41px;
   right: 45px;
@@ -351,7 +349,7 @@ header.fixed {
   box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
 }
 
-.media-block .list-avatars {
+.hero .list-avatars {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,7 +374,8 @@ header.fixed {
   text-align: center; /*căn giữa theo chiều cao */
 }
 
-/* Features */
+/*===========================Features===========================*/
+
 .features {
   margin-top: 149px;
 }
@@ -423,7 +422,8 @@ header.fixed {
   line-height: 1.69; /* 168.75% */
 }
 
-/* Courses */
+/*===========================Courses===========================*/
+
 .courses {
   margin-top: 130px;
 }
@@ -557,7 +557,8 @@ header.fixed {
   margin-left: 0;
 }
 
-/* Stats */
+/*===========================Stats===========================*/
+
 .stats {
   margin-top: 265px;
 }
@@ -590,3 +591,7 @@ header.fixed {
   font-size: 18px;
   line-height: normal;
 }
+
+/*===========================Quotes===========================*/
+/*===========================Contact===========================*/
+/*===========================Footer===========================*/
