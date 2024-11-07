@@ -559,3 +559,32 @@ header.fixed {
 .stats {
   margin-top: 265px;
 }
+
+.stats .main-content {
+  width: 862px;
+}
+
+.stats .stats-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats .stats-item {
+  text-align: center;
+}
+
+.stats .stats-quatity strong {
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stats .stats-popularity {
+  color: #767e7e;
+  font-size: 18px;
+  line-height: normal;
+}
