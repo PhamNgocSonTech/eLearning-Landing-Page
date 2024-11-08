@@ -593,5 +593,135 @@ header.fixed {
 }
 
 /*===========================Quotes===========================*/
+
+.quotes {
+  /* display: flex;
+  justify-content: center; */
+  /*  */
+  margin-top: 264px;
+}
+
+.quotes .quotes-body {
+  display: flex;
+  /* gap: 72px; */
+}
+
+.quotes .column-content {
+  width: 36%;
+  margin-right: 72px;
+}
+.quotes .open-quotation-mark {
+  margin-top: 37px;
+}
+
+.quotes .quotes-content {
+  width: 419px;
+  margin-top: 27px;
+  color: #5d6564;
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+
+.quotes .author-info {
+  margin-top: 33px;
+  display: flex;
+  align-items: center;
+}
+
+.quotes .author-info .mark {
+  width: 8px;
+  height: 2px;
+  background: #070707;
+  margin-right: 5px;
+}
+
+.quotes .author-name {
+  color: #070707;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.quotes .author-name::after {
+  content: ", ";
+  white-space: pre;
+}
+
+.quotes .author-role {
+  color: #767e7e;
+  font-size: 1.6rem;
+}
+
+.quotes .controls {
+  display: flex;
+  gap: 30px;
+  margin-top: 52px;
+}
+
+.quotes .control-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  background: #2ac9bf;
+  color: #fff;
+}
+
+.quotes .control-btn:hover {
+  color: #2ac9bf;
+  background: #fff;
+  cursor: pointer;
+  outline: 1px solid #2ac9bf;
+  transition: all ease-out 0.2s;
+}
+
+.quotes .column-avatars {
+  position: relative;
+  width: 61%;
+  /* margin-left: 72px; */
+}
+
+.quotes .column-avatars .avatar {
+  position: absolute;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quotes .column-avatars .avatar-middle {
+  width: 235px;
+  height: 235px;
+  top: 107px;
+  /* bottom: 139px; */
+  right: 171px;
+}
+
+.quotes .column-avatars .avatar-top-left {
+  top: 0;
+  left: 144px;
+}
+
+.quotes .column-avatars .avatar-left-side {
+  top: 258px;
+  left: 0;
+}
+
+.quotes .column-avatars .avatar-bottom-left {
+  left: 212px;
+  bottom: 0;
+}
+
+.quotes .column-avatars .avatar-bottom-right {
+  right: 32px;
+  bottom: 29px;
+}
+
+.quotes .column-avatars .avatar-top-right {
+  top: 19px;
+  right: 0;
+}
+
 /*===========================Contact===========================*/
 /*===========================Footer===========================*/
