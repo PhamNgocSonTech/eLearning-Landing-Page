@@ -178,11 +178,8 @@ header.fixed {
   margin-left: 50px;
 }
 
-.hero .watch-video:hover {
-  opacity: 0.8;
-}
-
 .hero .watch-video .icon {
+  color: #1ebfc1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,6 +187,12 @@ header.fixed {
   height: 62px;
   border-radius: 50%;
   box-shadow: 0px 22px 50px 0px #0000000d;
+}
+
+.hero .watch-video .icon:hover {
+  background-color: #1ebfc1;
+  color: #ffffff;
+  transition: all ease-out 0.2s;
 }
 
 .hero .btn-hero {
