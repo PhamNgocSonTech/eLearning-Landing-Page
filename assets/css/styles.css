@@ -724,4 +724,37 @@ header.fixed {
 }
 
 /*===========================Contact===========================*/
+.contact {
+  margin-top: 130px;
+  background: #def6f5;
+  padding: 76px 289px 88px 135px;
+}
+
+.contact .contact-body {
+  display: flex;
+  align-items: center;
+}
+
+.contact .desc {
+  margin-top: 18px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  line-height: normal;
+}
+
+.contact .contact-action {
+  margin-left: auto;
+}
+
+.contact .contact-btn {
+  background: #2ac9bf;
+  color: #ffffff;
+}
+
+.contact .contact-btn:hover {
+  background-color: #ffffff;
+  color: #2ac9bf;
+  outline: 1px solid #2ac9bf;
+  cursor: pointer;
+}
 /*===========================Footer===========================*/
