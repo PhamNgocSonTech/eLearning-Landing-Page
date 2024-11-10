@@ -761,3 +761,48 @@ header.fixed {
   cursor: pointer;
 }
 /*===========================Footer===========================*/
+.footer {
+  padding: 130px 139px 0;
+  background: #fff;
+}
+
+.footer .row {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.footer .title {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 26px;
+}
+
+.footer .list a {
+  display: inline-block;
+  color: #535353;
+  font-size: 1.6rem;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+.footer .row .column:nth-last-child(1) .list a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.footer .copyright {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.footer .copyright span {
+  display: inline-block;
+  color: #b0b5b4;
+  font-size: 1.8rem;
+  line-height: normal;
+  padding: 0 0 50px;
+}
