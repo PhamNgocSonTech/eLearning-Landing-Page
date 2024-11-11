@@ -136,13 +136,14 @@ header.fixed {
   font-size: 1.6rem;
 }
 
-.nav a:hover,
-.nav li.active {
-  /* font-weight: 600; */
-  text-shadow: 1px 0 0 currentColor;
+.nav li:hover {
+  text-shadow: 1px 0 0 #0d1111;
+}
+
+/* .nav a:hover {
   text-decoration: underline;
   text-decoration-color: var(--primary-color);
-}
+} */
 
 /* Hero */
 .hero {
