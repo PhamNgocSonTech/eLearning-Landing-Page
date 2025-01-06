@@ -1,0 +1,70 @@
+/* Desktop */
+@media screen and (min-width: 992px) {
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991px) {
+  .nav {
+    display: none;
+  }
+
+  .hero .media-block .img {
+    width: 300px;
+  }
+
+  .hero .hero-schedule {
+    right: 250px;
+    bottom: 120px;
+  }
+
+  .hero .hero-courses {
+    top: 230px;
+  }
+
+  .features .features-list {
+    justify-content: center;
+  }
+
+  .courses .courses-list {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .stats .stats-list {
+    justify-content: space-around;
+  }
+
+  .column-avatars {
+    display: none;
+  }
+
+  .quotes .column-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact .contact-body {
+    display: inline-block;
+  }
+
+  .contact .desc {
+    margin-bottom: 18px;
+  }
+
+  .footer {
+    padding: 80px 10px 0;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Mobile */
+@media screen and (min-width: 768px) {
+}
+
+/* Mobile Xsmall */
+@media screen and (max-width: 576px) {
+}
