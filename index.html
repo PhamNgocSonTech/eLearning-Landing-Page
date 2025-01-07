@@ -35,10 +35,24 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- PC Header -->
     <header class="header fixed">
         <div class="main-content">
             <div class="body">
+                <!-- Tablet/Mobile menu -->
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                    viewBox="0,0,256,256">
+                    <g fill="#1ebfc1" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.33333,5.33333)">
+                            <path
+                                d="M5.5,9c-0.54095,-0.00765 -1.04412,0.27656 -1.31683,0.74381c-0.27271,0.46725 -0.27271,1.04514 0,1.51238c0.27271,0.46725 0.77588,0.75146 1.31683,0.74381h37c0.54095,0.00765 1.04412,-0.27656 1.31683,-0.74381c0.27271,-0.46725 0.27271,-1.04514 0,-1.51238c-0.27271,-0.46725 -0.77588,-0.75146 -1.31683,-0.74381zM5.5,22.5c-0.54095,-0.00765 -1.04412,0.27656 -1.31683,0.74381c-0.27271,0.46725 -0.27271,1.04514 0,1.51238c0.27271,0.46725 0.77588,0.75146 1.31683,0.74381h37c0.54095,0.00765 1.04412,-0.27656 1.31683,-0.74381c0.27271,-0.46725 0.27271,-1.04514 0,-1.51238c-0.27271,-0.46725 -0.77588,-0.75146 -1.31683,-0.74381zM5.5,36c-0.54095,-0.00765 -1.04412,0.27656 -1.31683,0.74381c-0.27271,0.46725 -0.27271,1.04514 0,1.51238c0.27271,0.46725 0.77588,0.75146 1.31683,0.74381h37c0.54095,0.00765 1.04412,-0.27656 1.31683,-0.74381c0.27271,-0.46725 0.27271,-1.04514 0,-1.51238c-0.27271,-0.46725 -0.77588,-0.75146 -1.31683,-0.74381z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
                 <!-- Logo -->
                 <a href="#">
                     <img src="./assets/icons/logo.svg" alt="Besnik." class="logo">
@@ -69,6 +83,36 @@
                     <a href="" class="btn sign-up-btn">Sign up</a>
                 </div>
             </div>
+        </div>
+    </header>
+
+    <!-- Tablet/Mobile Header -->
+    <header class="mobile-header">
+        <!-- Overlay -->
+        <div class="menu-overlay"></div>
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <a href="#">
+                <img src="./assets/icons/logo.svg" alt="Besnik." class="logo">
+            </a>
+
+            <ul>
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+                <li>
+                    <a href="#pricing">Pricing</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </header>
 
@@ -459,6 +503,29 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.querySelector('#menu-icon');
+            const navMenu = document.querySelector('.body');
+            const overlay = document.querySelector('.menu-overlay');
+            const menuDrawer = document.querySelector('.menu-drawer');
+            // const overlay = document.createElement('div');
+            // overlay.classList.add('menu-overlay', 'menu-drawer');
+            // document.body.appendChild(overlay);
+
+            menuIcon.onclick = function () {
+                navMenu.classList.add('show');
+                overlay.classList.add('show');
+                menuDrawer.classList.add('show');
+            };
+
+            overlay.onclick = function () {
+                navMenu.classList.remove('show');
+                overlay.classList.remove('show');
+                menuDrawer.classList.remove('show');
+            };
+        });
+    </script>
 </body>
 
 </html>

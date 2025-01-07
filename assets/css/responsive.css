@@ -1,11 +1,29 @@
 /* Desktop */
 @media screen and (min-width: 992px) {
+  #menu-icon {
+    display: none;
+  }
 }
 
 /* Tablet & Mobile */
 @media screen and (max-width: 991px) {
   .nav {
     display: none;
+  }
+
+  .header .body {
+    position: relative;
+  }
+
+  .header.fixed {
+    top: -20px;
+  }
+
+  .header .body .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .hero .media-block .img {
@@ -55,6 +73,67 @@
   .footer {
     padding: 80px 10px 0;
   }
+
+  /* JS Menu */
+  /* Sidebar CSS */
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Ẩn ngoài màn hình */
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  /* Hiển thị Sidebar */
+  .nav.show {
+    right: 0; /* Trượt vào màn hình */
+  }
+
+  /* Overlay CSS */
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3); /* Mờ nền */
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+  }
+
+  .menu-drawer {
+    position: fixed;
+    padding: 40px;
+    inset: 0 40% 0 0; /* Đặt menu vào phần phải màn hình */
+    background: #fff; /* Nền trắng */
+    z-index: 2; /* Đặt menu lên trên overlay */
+    transform: translateX(-100%); /*Đẩy menu ra khỏi màn hình*/
+    transition: 0.5s ease;
+  }
+
+  .menu-drawer ul {
+    margin-top: 32px;
+  }
+
+  .menu-drawer ul a {
+    display: block;
+    padding: 14px 0;
+    color: #2f3a3b;
+  }
+
+  /* Hiển thị Overlay */
+  /* Active States */
+  .menu-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-drawer.show {
+    transform: translateX(0); /* Hiện menu */
+  }
 }
 
 /* Tablet */
@@ -63,6 +142,9 @@
 
 /* Mobile */
 @media screen and (min-width: 768px) {
+  .menu-drawer {
+    padding: 40px;
+  }
 }
 
 /* Mobile Xsmall */
