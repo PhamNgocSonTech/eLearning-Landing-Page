@@ -170,6 +170,18 @@
     padding: 40px;
   }
 
+  .hero .media-block .img {
+    display: none;
+  }
+
+  .hero .content-block {
+    width: 100%;
+  }
+
+  .hero .media-block {
+    display: none;
+  }
+
   .header .actions {
     display: none;
   }
@@ -180,6 +192,29 @@
 
   .header .body .logo {
     top: 60%;
+  }
+
+  .features .heading.lv2 {
+    width: 100%;
+  }
+
+  .features .desc {
+    width: 100%;
+  }
+
+  .features .features-list {
+    display: grid;
+  }
+
+  .quotes .column-content {
+    width: 100%;
+  }
+  .quotes .quotes-content {
+    width: 100%;
+  }
+
+  .stats .stats-list {
+    display: block;
   }
 }
 
