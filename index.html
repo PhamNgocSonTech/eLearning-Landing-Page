@@ -40,7 +40,7 @@
         <div class="main-content">
             <div class="body">
                 <!-- Tablet/Mobile menu -->
-                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
                     viewBox="0,0,256,256">
                     <g fill="#1ebfc1" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                         stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -59,7 +59,7 @@
                 </a>
                 <!-- Nav -->
                 <nav class="nav">
-                    <ul>
+                    <ul id="pc-nav">
                         <li class="active">
                             <a href="#">Home</a>
                         </li>
@@ -74,6 +74,12 @@
                         </li>
                         <li>
                             <a href="#contact">Contact</a>
+                        </li>
+                        <li class="show-on-mobile separate">
+                            <a href="#!">Sign in</a>
+                        </li>
+                        <li class="show-on-mobile">
+                            <a href="#!">Sign up</a>
                         </li>
                     </ul>
                 </nav>
@@ -96,22 +102,8 @@
                 <img src="./assets/icons/logo.svg" alt="Besnik." class="logo">
             </a>
 
-            <ul>
-                <li class="active">
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#features">Features</a>
-                </li>
-                <li>
-                    <a href="#pricing">Pricing</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
+            <ul id="mobile-nav">
+
             </ul>
         </div>
     </header>
@@ -410,7 +402,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="display: none;">
         <div class="main-content">
             <div class="row">
                 <div class="logo">
@@ -504,6 +496,8 @@
         </div>
     </footer>
     <script>
+
+        // JS Event Click Menu Nav
         document.addEventListener('DOMContentLoaded', function () {
             const menuIcon = document.querySelector('#menu-icon');
             const navMenu = document.querySelector('.body');
@@ -524,6 +518,13 @@
                 overlay.classList.remove('show');
                 menuDrawer.classList.remove('show');
             };
+        });
+
+        // Dynamically navigation  from PC devices to Mobile & Tablet devices
+        document.addEventListener('DOMContentLoaded', function () {
+            const pcNav = document.querySelector('#pc-nav');
+            const mobileNav = document.querySelector('#mobile-nav');
+            mobileNav.innerHTML = pcNav.innerHTML;
         });
     </script>
 </body>

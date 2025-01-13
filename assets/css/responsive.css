@@ -3,6 +3,14 @@
   #menu-icon {
     display: none;
   }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: none;
+  }
 }
 
 /* Tablet & Mobile */
@@ -134,16 +142,32 @@
   .menu-drawer.show {
     transform: translateX(0); /* Hiện menu */
   }
+
+  .separate {
+    border-top: 1px solid #1ebfc1;
+  }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .show-on-mobile {
+    display: none;
+  }
 }
 
 /* Mobile */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-drawer {
+    inset: 0 25% 0 0;
     padding: 40px;
+  }
+
+  .header .actions {
+    display: none;
+  }
+
+  .header .body {
+    padding: 14px 0 8px;
   }
 }
 
