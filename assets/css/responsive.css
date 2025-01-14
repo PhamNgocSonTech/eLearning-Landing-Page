@@ -220,4 +220,12 @@
 
 /* Mobile Xsmall */
 @media screen and (max-width: 576px) {
+  .footer {
+    padding: 80px 10px 0;
+  }
+
+  .footer .row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
 }
