@@ -29,6 +29,7 @@ body {
 a {
   text-decoration: none;
   color: #2f3a3b;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn {

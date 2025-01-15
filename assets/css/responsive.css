@@ -163,6 +163,29 @@
   }
 }
 
+/* Ipad Pro */
+@media screen and (min-width: 1024px) {
+  .hero .media-block .img {
+    width: 450px;
+  }
+
+  .hero .hero-schedule {
+    right: 400px;
+  }
+
+  .hero .list-students {
+    right: 5px;
+  }
+
+  .features .features-list {
+    justify-content: space-evenly;
+  }
+
+  .footer {
+    padding: 80px 50px 0;
+  }
+}
+
 /* Mobile */
 @media screen and (max-width: 767px) {
   .menu-drawer {
@@ -199,16 +222,12 @@
     padding: 14px 0 8px;
   }
 
+  .header.fixed {
+    top: -10px;
+  }
+
   .header .body .logo {
     top: 60%;
-  }
-
-  .features .heading.lv2 {
-    width: 100%;
-  }
-
-  .features .desc {
-    width: 100%;
   }
 
   .features .features-list {
@@ -231,10 +250,10 @@
     margin-top: 150px;
   }
 
+  .features .heading.lv2,
+  .features .desc,
+  .quotes .quotes-content,
   .quotes .column-content {
-    width: 100%;
-  }
-  .quotes .quotes-content {
     width: 100%;
   }
 
@@ -258,4 +277,7 @@
 
 /* Mobile Xsmall */
 @media screen and (max-width: 576px) {
+  .courses .row .desc {
+    width: 100%;
+  }
 }
