@@ -170,12 +170,21 @@
     padding: 40px;
   }
 
+  .hero {
+    padding: 42px 0 40px;
+  }
+
+  .heading.lv2 {
+    font-size: 3.5rem;
+  }
+
   .hero .media-block .img {
     display: none;
   }
 
   .hero .content-block {
     width: 100%;
+    padding-top: 50px;
   }
 
   .hero .media-block {
@@ -203,7 +212,23 @@
   }
 
   .features .features-list {
-    display: grid;
+    /* display: grid; */
+    flex-direction: column;
+    text-align: left;
+    row-gap: 40px;
+  }
+
+  .courses .row .link {
+    font-size: 1.2rem;
+  }
+
+  .courses .row .desc {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .quotes {
+    margin-top: 150px;
   }
 
   .quotes .column-content {
